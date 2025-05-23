@@ -1,0 +1,122 @@
+site_name: Laysa's blog
+# ' this is for emacs, else it messes up syntax highlighting
+site_url: https://laysa.uchoa.de
+docs_dir: blog
+
+copyright: >
+  Copyright &copy; 2025 Laysa Uchoa  -
+  <a href="#__consent">Change cookie settings</a>
+
+nav:
+  - Blog: index.md
+  - About: about.md
+  - Tags: tags.md
+
+theme:
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - header.autohide
+
+  palette:
+    - scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+
+plugins:
+  - blog:
+      blog_dir: .
+      post_excerpt: required
+      pagination: true
+      post_url_format: "{date}/{slug}"
+      post_date_format: medium
+      categories: true
+
+      draft: true # include drafts
+
+  - search
+  - tags
+  - glightbox:
+      auto_caption: true
+
+  - rss:
+      match_path: "posts/.*"
+      comments_path: "#__comments"
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
+
+  # redirects for another website
+#  - redirects:
+#      redirect_maps:
+#        'training.html': about.md
+#        'talks.html': about.md
+#        'projects.html': about.md
+#        'contact.html': about.md
+#        'it/training.html': about.md
+#        'it/talks.html': about.md
+#        'it/projects.html': about.md
+#        'it/contact.html': about.md
+#        'it/index.html': about.md
+
+
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+#  analytics:
+#    provider: google
+#    property: PROPERTY-HERE
+
+  social:
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/laysa.uchoa/
+
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/laysa.uchoa.bsky.social
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/laysa.uchoa
