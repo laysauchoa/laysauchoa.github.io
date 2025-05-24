@@ -1,0 +1,68 @@
+img.rounded {
+    border-radius: 100%;
+}
+
+img.profile {
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+img.offset-ring {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+    box-shadow:
+        15px -15px 0 -10px #ff6b6b,
+        15px -15px 0 -6px #ffffff;
+}
+
+img.geo-modern {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow:
+
+        10px -10px 0 2px #f093fb;
+}
+
+/*img.modern-circle-bg {*/
+/*    border-radius: 50%;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    object-fit: cover;*/
+/*    background-color: #d2c7ff;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*img.modern-circle-bg {*/
+/*    border-radius: 50%;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    object-fit: cover;*/
+/*    background-color: #d2c7ff;*/
+/*    padding: 0px;*/
+/*    box-sizing: border-box;*/
+/*    float: left;*/
+/*    margin: 0 20px 20px 0;*/
+/*}*/
+img.modern-circle-bg {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #d2c7ff;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+.clear-float {
+    clear: both;
+}
+
+img.modern-circle-bg + p {
+    margin-top: 100rem;
+}
