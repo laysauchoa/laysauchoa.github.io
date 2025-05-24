@@ -30,16 +30,18 @@ theme:
       primary: white
       accent: red
       toggle:
-        icon: material/weather-night
+        icon: material/lightbulb-outline
         name: Switch to dark mode
 
     - scheme: slate
-      primary: blue grey
-      accent: cyan
+      primary: black
+      accent: white
       toggle:
-        icon: material/brightness-7
+        icon: material/lightbulb
         name: Switch to light mode
 
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - blog:
@@ -119,4 +121,4 @@ extra:
       link: https://bsky.app/profile/laysa.uchoa.bsky.social
 
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/laysa.uchoa
+      link: https://de.linkedin.com/in/laysauchoa

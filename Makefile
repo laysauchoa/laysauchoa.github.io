@@ -7,7 +7,3 @@ build:
 
 gh-deploy:
 	uv run --with-requirements requirements.txt mkdocs gh-deploy
-
-
-aws-deploy: build
-	rsync -avz --delete site/ aws:/home/ubuntu/www/laysa.uchoa.eu/blog

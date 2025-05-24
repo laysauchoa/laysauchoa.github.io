@@ -1,8 +1,8 @@
 ---
 draft: false
-date: 2025-06-06
-title: "Living in Munich"
-description: "Experience"
+date: 2025-05-05
+title: "Living in Munich 2"
+description: "Experience 2"
 categories:
   - Post
 tags:
@@ -11,7 +11,7 @@ tags:
   - germany
 ---
 
-# Laysa Uchoa
+# "Living in Munich 2"
 
 
 I am a software developer curious about structured and unstructured data with a mission to share helpful things I find while working in tech.
