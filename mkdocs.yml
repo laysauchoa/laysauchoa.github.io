@@ -1,6 +1,6 @@
 site_name: Laysa's blog
 # ' this is for emacs, else it messes up syntax highlighting
-site_url: https://laysa.uchoa.de
+site_url: https://laysauchoa.github.io
 docs_dir: blog
 
 copyright: >
